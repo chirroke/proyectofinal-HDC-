@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - CloudTech</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CloudTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="tipos.html">Tipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ap.html">Aplicaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="futuro.html">Futuro</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <section class="container text-center py-5" data-aos="fade-down">
+    <h1 class="fw-bold highlight">📩 Contáctanos</h1>
+    <p class="text-muted">¿Tienes preguntas sobre Cloud Computing? Estamos aquí para ayudarte.</p>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section class="container py-5" data-aos="fade-up">
+    <div class="row g-5">
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <h2>Envíanos un mensaje</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="tucorreo@example.com" required />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-highlight">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="col-md-6">
+        <h2>Información</h2>
+        <p class="text-muted">Nuestro equipo está listo para resolver tus dudas sobre soluciones en la nube, servicios IaaS, PaaS o SaaS, y asesorarte en tu proceso de transformación digital.</p>
+        <ul class="list-group list-group-flush bg-dark">
+          <li class="list-group-item bg-dark text-light">📍 Dirección: Av. Nube 123, Lima, Perú</li>
+          <li class="list-group-item bg-dark text-light">📞 Teléfono: +51 987 654 321</li>
+          <li class="list-group-item bg-dark text-light">📧 Email: contacto@cloudtech.com</li>
+          <li class="list-group-item bg-dark text-light">🌐 Sitio web: www.cloudtech.com</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa (opcional) -->
+  <section class="container my-5" data-aos="fade-up">
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." title="Ubicación" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CloudTech – Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Botón scroll top -->
+  <button onclick="scrollToTop()" id="btnScrollTop" title="Volver arriba">↑</button>
+
+  <!-- Scripts -->
+  <script>
+    // Mostrar botón al hacer scroll
+    window.onscroll = function () {
+      const btn = document.getElementById("btnScrollTop");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true, easing: 'ease-in-out' });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Futuro de la Nube</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h5 {
+      color: #c0f500;
+    }
+
+    .text-muted {
+      color: #b5b5b5 !important;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .btn-highlight {
+      background-color: #c0f500;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-section {
+      height: 100vh;
+      background: url('imagenes/futuro_bg.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 60px;
+      border-radius: 12px;
+    }
+
+    .timeline-step {
+      border-left: 4px solid #c0f500;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #c0f500;
+      border-radius: 50%;
+    }
+
+    .footer {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CloudTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link " href="index.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="tipos.html">Tipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ap.html">Aplicaciones</a></li>
+          <li class="nav-item"><a class="nav-link active" href="futuro.html">Futuro</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="hero-overlay text-light" data-aos="zoom-in">
+      <h1 class="display-4 fw-bold">La Nube en 2035</h1>
+      <p class="lead fst-italic">“No solo almacenaremos datos, almacenaremos ideas, vidas y sueños.”</p>
+    </div>
+  </section>
+
+  <!-- Slider -->
+  <section class="container mt-5" data-aos="fade-down">
+    <div id="sliderFuturo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/futuro1.jpg" class="d-block w-100" alt="Futuro Cloud">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/futuro2.jpg" class="d-block w-100" alt="IA en la nube">
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/futuro3.jpg" class="d-block w-100" alt="Automatización">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#sliderFuturo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#sliderFuturo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Cita -->
+  <section class="text-center py-5 bg-black">
+    <blockquote class="blockquote text-light fs-3" data-aos="fade-up">
+      <p>“La nube será nuestro segundo cerebro, siempre conectado, siempre aprendiendo.”</p>
+      <footer class="blockquote-footer">Visión 2030, Instituto Global Cloud</footer>
+    </blockquote>
+  </section>
+
+  <!-- Predicciones -->
+  <section class="container py-5">
+    <h2 class="text-center mb-5" data-aos="fade-down">🔭 ¿Qué nos espera?</h2>
+    <div class="row g-4" data-aos="fade-up">
+      <div class="col-md-4">
+        <div class="card bg-dark text-light h-100 shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">🤖 Nube Cognitiva</h5>
+            <p class="card-text">IA anticipando decisiones y automatizando tareas desde salud hasta industrias.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-light h-100 shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">🌎 Nube Descentralizada</h5>
+            <p class="card-text">Infraestructura distribuida y más segura, sin dependencia de grandes servidores.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-light h-100 shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">♻️ 100% Energía Verde</h5>
+            <p class="card-text">IA que optimiza el consumo de energía, asegurando sostenibilidad total.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Línea de Tiempo -->
+  <!-- Línea de Tiempo Histórica -->
+  <section class="container py-5 bg-dark">
+    <h2 class="text-center mb-5" data-aos="fade-right">📜 Línea de Tiempo del Cloud Computing</h2>
+    <div class="col-md-8 mx-auto">
+      <div class="timeline-step" data-aos="fade-up">
+        <h5>1950s</h5>
+        <p class="text-muted">Surgen los mainframes que permiten a múltiples usuarios acceder a un mismo sistema
+          central.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+        <h5>1969</h5>
+        <p class="text-muted">J.C.R. Licklider plantea la idea de una red informática intergaláctica, base del concepto
+          de cloud.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="200">
+        <h5>1999</h5>
+        <p class="text-muted">Salesforce lanza el primer software empresarial basado 100% en la web.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="300">
+        <h5>2006</h5>
+        <p class="text-muted">Amazon lanza AWS, revolucionando el mercado con servicios como S3 y EC2.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="400">
+        <h5>2008</h5>
+        <p class="text-muted">HP, Intel y Yahoo crean un laboratorio de computación en la nube de código abierto.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="500">
+        <h5>2010–2014</h5>
+        <p class="text-muted">Google, Microsoft, IBM, Oracle y otros lanzan sus propias plataformas cloud.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="600">
+        <h5>2018</h5>
+        <p class="text-muted">Las tecnologías de IA comienzan a integrarse de forma masiva en servicios en la nube.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="700">
+        <h5>2020–2023</h5>
+        <p class="text-muted">La pandemia acelera la adopción global del trabajo remoto y las plataformas cloud.</p>
+      </div>
+      <div class="timeline-step" data-aos="fade-up" data-aos-delay="800">
+        <h5>2025</h5>
+        <p class="text-muted">El almacenamiento cloud se vuelve ubicuo, con acceso global incluso en zonas rurales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="container my-5 text-center" data-aos="zoom-in-up">
+    <h3 class="mb-4">Video: ¿Qué nos espera en el futuro?</h3>
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/UoOmvurFNBw" title="Futuro Cloud" allowfullscreen></iframe>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CloudTech – Todos los derechos reservados</p>
+  </footer>
+  <!--scrool-->
+  <button onclick="scrollToTop()" id="btnScrollTop" title="Volver arriba">↑</button>
+  <!-- Scripts -->
+  <script>
+    // Mostrar botón al hacer scroll
+    window.onscroll = function () {
+      const btn = document.getElementById("btnScrollTop");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    // Función para volver al principio
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+
+</html>
